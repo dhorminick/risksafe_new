@@ -104,12 +104,13 @@
           </div>
 
           <div class="flex max-lg:ml-auto space-x-3">
-            <a href="login.html" target="_blank" class="btn btn-primary"
-              >Sign In</a
+            <a href="/auth/sign-in.html" class="btn btn-primary">Sign In</a>
+            <a
+              href="/auth/sign-up.html"
+              class="btn btn-secondary hidden sm:block"
             >
-            <button class="btn btn-secondary hidden sm:block">
               Get Started
-            </button>
+            </a>
 
             <button id="toggleOpen" class="lg:hidden">
               <svg
@@ -646,7 +647,7 @@
     <!--  -->
     <div class="flex justify-center items-center">
       <div
-        class="cta w-full flex flex-col rounded-[10px] gap-[20px] p-[50px] justify-center items-center sm:w-[80%]"
+        class="cta w-full flex flex-col rounded-[0] sm:rounded-[10px] gap-[20px] p-[30px] sm:p-[50px] justify-center items-center sm:w-[80%]"
       >
         <h1 class="font-bold text-[30px] text-center">
           Why RiskSafe is highly regarded by customers?
@@ -663,15 +664,17 @@
 
     <div>
       <footer
-        class="shadow-md py-4 sm:py-[30px] px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-40 mt-[50px] border border-gray-300"
+        class="shadow-md py-4 sm:py-[30px] z-10 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide mt-[50px] border border-gray-300"
       >
         <div class="flex flex-col sm:flex-row justify-between mb-[30px]">
           <div class="about w-full sm:w-[50%]">
             <div class="font-bold mb-[5px]">About RiskSafe</div>
-            We provide comprehensive risk management services, from assessment
-            and analysis to customized strategies, aimed at minimizing
-            uncertainty and maximizing opportunities. Our proactive approach
-            helps you stay ahead of threats and capitalize on emerging trends.
+            <div class="text-[15px]">
+              We provide comprehensive risk management services, from assessment
+              and analysis to customized strategies, aimed at minimizing
+              uncertainty and maximizing opportunities. Our proactive approach
+              helps you stay ahead of threats and capitalize on emerging trends.
+            </div>
           </div>
           <div
             class="about w-full mt-[10px] sm:mt-[0px] sm:w-[50%] flex flex-col sm:flex-row gap-[20px] sm:gap-[0px] sm:justify-around"
@@ -712,7 +715,7 @@
           class="flex justify-between border-[var(--primary)]-400 border-t-2 pt-[20px] pb-[-20px]"
         >
           <div>© RiskSafe - 2024</div>
-          <div class="flex gap-3">
+          <div class="flex sm:gap-3 gap-[0px] sm:flex-row flex-col">
             <a class="bb" href="/contact-us">Terms of service</a>
             <a class="bb" href="/contact-us">Privacy Policy</a>
             <a class="bb hidden sm:block" href="/contact-us">RiskSafe Help</a>
