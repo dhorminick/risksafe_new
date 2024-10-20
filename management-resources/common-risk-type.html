@@ -1,265 +1,327 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
 
-    <link rel="stylesheet" href="/assets/css/style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body class="flex flex-col gap-[30px]">
-    <div class="fixed w-full">
-      <header
-        class="flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
-      >
-        <div class="flex flex-wrap items-center justify-between gap-5 w-full">
-          <a href="javascript:void(0)"
-            ><img
-              src="https://risksafe.co/assets/images/logo-edit.jpg"
-              alt="logo"
-              class="w-36"
-            />
-          </a>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Home Page</title>
 
-          <div
-            id="collapseMenu"
-            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
-          >
-            <button
-              id="toggleClose"
-              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-4 fill-black"
-                viewBox="0 0 320.591 320.591"
-              >
-                <path
-                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                  data-original="#000000"
-                ></path>
-                <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </button>
+  <link rel="stylesheet" href="/assets/css/style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-            <ul
-              class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
-            >
-              <li class="mb-6 hidden max-lg:block">
-                <a href="javascript:void(0)"
-                  ><img
-                    src="https://risksafe.co/assets/images/logo-edit.jpg"
-                    alt="logo"
-                    class="w-36"
-                  />
-                </a>
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/"
-                  class="hover:text-[var(--primary)] text-[var(--primary)] block font-semibold text-[15px]"
-                  >Home</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/about-risksafe.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >About RiskSafe</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="risksafe-resources.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Resources</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/pricing.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Pricing</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/contact-us.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
+<body class="flex flex-col gap-[30px]">
+  <div class="fixed w-full">
+    <header
+      class="flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50">
+      <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+        <a href="javascript:void(0)"><img src="https://risksafe.co/assets/images/logo-edit.jpg" alt="logo"
+            class="w-36" />
+        </a>
 
-          <div class="flex max-lg:ml-auto space-x-3">
-            <a href="login.html" target="_blank" class="btn btn-primary"
-              >Sign In</a
-            >
-            <button class="btn btn-secondary hidden sm:block">
-              Get Started
-            </button>
+        <div id="collapseMenu"
+          class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
+          <button id="toggleClose" class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="w-4 fill-black" viewBox="0 0 320.591 320.591">
+              <path
+                d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
+                data-original="#000000"></path>
+              <path
+                d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
+                data-original="#000000"></path>
+            </svg>
+          </button>
 
-            <button id="toggleOpen" class="lg:hidden">
-              <svg
-                class="w-7 h-7"
-                fill="#000"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
+          <ul
+            class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            <li class="mb-6 hidden max-lg:block">
+              <a href="javascript:void(0)"><img src="https://risksafe.co/assets/images/logo-edit.jpg" alt="logo"
+                  class="w-36" />
+              </a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="/"
+                class="hover:text-[var(--primary)] text-[var(--primary)] block font-semibold text-[15px]">Home</a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="/about-risksafe.html"
+                class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]">About RiskSafe</a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="risksafe-resources.html"
+                class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]">Resources</a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="/pricing.html"
+                class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]">Pricing</a>
+            </li>
+            <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
+              <a href="/contact-us.html"
+                class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]">Contact Us</a>
+            </li>
+          </ul>
         </div>
-      </header>
+
+        <div class="flex max-lg:ml-auto space-x-3">
+          <a href="login.html" target="_blank" class="btn btn-primary">Sign In</a>
+          <button class="btn btn-secondary hidden sm:block">
+            Get Started
+          </button>
+
+          <button id="toggleOpen" class="lg:hidden">
+            <svg class="w-7 h-7" fill="#000" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd"
+                d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
+                clip-rule="evenodd"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <div class="mt-[55px]"></div>
+
+  <div class="bg-white px-[20px] py-[30px] sm:py-[50px] sm:px-[50px]">
+  
+    <div class="text-[13px] text-gray-500 mb-4">
+      <a href="/" class="bb text-blue-600">Home</a> |
+      <a href="#" class="text-blue-600">Our Resources</a> |
+      <span class="text-gray-500">Common Risk Types</span>
     </div>
 
-    <div class="mt-[55px]"></div>
-    <div class="main-content min-h-screen bg-gray-100">
-      <section class="section py-8">
-        <div class="container mx-auto px-4">
-          <div class="section-body">
-            <div
-              class="card bg-white shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 ease-in-out"
-            >
+
+    <h3 class="mb-[20px] font-bold text-3xl sm:text-2xl text-primary">Understanding Risk Types and Management Strategies
+    </h3>
+
+    <div class="text-[14px] w-full sm:max-w-[600px] mb-[30px]">
+      <p>
+        Explore essential resources provided by <span class="text-blue-600 font-semibold">RiskSafe</span> that cover key
+        risk types, assessments, and management strategies. Whether you're dealing with internal or external risks,
+        we've got the insights and tools to guide you through effective risk management.
+      </p>
+    </div>
+  </div>
+
+  <div class="main-content py-8">
+    <section class="section">
+      <div class="container mx-auto px-4">
+        <div class="section-body">
+         
+          <div
+            class="card bg-white shadow-lg border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out">
+            
+            <div class="h-56 bg-cover bg-center" style="
+                    background-image: url('https://via.placeholder.com/800x400');
+                  "></div>
+
+            <div class="p-6">
               <div class="card-header mb-4">
                 <h3 class="text-2xl header-text text-primary">
                   Common Risk Types
                 </h3>
               </div>
-              <div class="card-body text-gray-700 leading-relaxed custom-p">
+              <div class="card-body text-gray-700 leading-relaxed">
                 <p class="mb-4">
-                  The level and type of risk that you need to consider will vary
-                  with the type of business you operate. However, there are some
-                  common categories which you can use to guide your thinking and
-                  the development of your risk management plan.
+                  The level and type of risk that you need to consider will
+                  vary with the type of business you operate. However, there
+                  are some common categories which you can use to guide your
+                  thinking and the development of your risk management plan.
                 </p>
                 <p class="mb-4">
-                  The following lists the official Basel II defined 7 risk event
-                  types with examples for each category:
+                  The following lists the official Basel II defined 7 risk
+                  event types with examples for each category:
                 </p>
-                <ul class="list-disc pl-6 mb-4">
-                  <li class="mb-2">
-                    <strong>Internal Fraud</strong> - misappropriation of
-                    assets, tax evasion, intentional mismarking of positions,
-                    bribery
-                  </li>
-                  <li class="mb-2">
-                    <strong>External Fraud</strong> - theft of information,
-                    hacking damage, third-party theft and forgery
-                  </li>
-                  <li class="mb-2">
-                    <strong>Employment Practices and Workplace Safety</strong> -
-                    discrimination, workers compensation, employee health and
-                    safety
-                  </li>
-                  <li class="mb-2">
-                    <strong>Clients, Products, and Business Practice</strong> -
-                    market manipulation, antitrust, improper trade, product
-                    defects, fiduciary breaches, account churning
-                  </li>
-                  <li class="mb-2">
-                    <strong>Damage to Physical Assets</strong> - natural
-                    disasters, terrorism, vandalism
-                  </li>
-                  <li class="mb-2">
-                    <strong>Business Disruption and Systems Failures</strong> -
-                    utility disruptions, software failures, hardware failures
-                  </li>
-                  <li>
-                    <strong>Execution, Delivery, and Process Management</strong>
-                    - data entry errors, accounting errors, failed mandatory
-                    reporting, negligent loss of client assets
-                  </li>
-                </ul>
+                <div class="main-content py-8">
+                  <section class="section">
+                    <div class="container mx-auto px-4">
+                      <div class="section-body grid grid-cols-1 gap-6">
+
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                         <div class="h-full w-1/2 bg-cover bg-no-repeat bg-center hover:bg-contain transition-all duration-300 ease-in-out"
+     style="background-image: url('../assets/images/resources/internal-fraud.jpg');">
+</div>
+
+                          <div class="p-4 w-1/2 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">Internal Fraud</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              Internal fraud involves various deceptive practices committed by employees or insiders
+                              within an organization. This can include misappropriation of assets, tax evasion,
+                              intentional mismarking of positions, and bribery. These activities not only lead to
+                              financial losses but can also damage the organization’s reputation and employee morale.
+                              Implementing robust internal controls and regular audits is essential to detect and
+                              prevent such fraudulent activities.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                          <div class="h-full w-1/2 bg-cover bg-center order-2"
+                            style="background-image: url('https://via.placeholder.com/400x250/ff7f7f');"></div>
+                          <div class="p-4 w-1/2 order-1 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">External Fraud</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              External fraud refers to fraudulent activities conducted by individuals or groups outside
+                              the organization, targeting its resources or information. This includes theft of sensitive
+                              data, hacking incidents, third-party theft, and forgery. Organizations must employ strong
+                              cybersecurity measures and establish protocols for monitoring and reporting suspicious
+                              activities to mitigate these risks effectively.
+                            </p>
+                          </div>
+                        </div>
+
+                 
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                          <div class="h-full w-1/2 bg-cover bg-center"
+                            style="background-image: url('https://via.placeholder.com/400x250/7f7fff');"></div>
+                          <div class="p-4 w-1/2 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">Workplace Safety</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              Workplace safety encompasses the protocols and practices in place to ensure a safe working
+                              environment for all employees. This includes addressing issues such as discrimination,
+                              workers' compensation claims, and overall employee health and safety. Organizations must
+                              foster a culture of safety, provide adequate training, and ensure compliance with health
+                              regulations to protect their workforce and minimize liabilities.
+                            </p>
+                          </div>
+                        </div>
+
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                          <div class="h-full w-1/2 bg-cover bg-center order-2"
+                            style="background-image: url('https://via.placeholder.com/400x250/ffcc7f');"></div>
+                          <div class="p-4 w-1/2 order-1 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">Physical Assets Damage</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              Physical assets damage refers to the loss or impairment of tangible assets due to various
+                              factors, including natural disasters, acts of terrorism, or vandalism. Organizations must
+                              have effective risk management strategies in place, such as insurance policies and
+                              contingency plans, to mitigate the impact of such incidents and ensure a swift recovery.
+                            </p>
+                          </div>
+                        </div>
+
+                        
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                          <div class="h-full w-1/2 bg-cover bg-center"
+                            style="background-image: url('https://via.placeholder.com/400x250/ff7fff');"></div>
+                          <div class="p-4 w-1/2 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">System Failures</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              System failures can lead to significant disruptions in business operations, resulting from
+                              utility outages, software failures, or hardware malfunctions. Organizations must
+                              prioritize system resilience by regularly maintaining infrastructure, performing updates,
+                              and having disaster recovery plans to minimize downtime and ensure business continuity.
+                            </p>
+                          </div>
+                        </div>
+
+                        
+                        <div
+                          class="card bg-white shadow-md border border-gray-200 rounded-lg overflow-hidden transition-shadow duration-300 ease-in-out flex hover:shadow-2xl">
+                          <div class="h-full w-1/2 bg-cover bg-center order-2"
+                            style="background-image: url('https://via.placeholder.com/400x250/ccff7f');"></div>
+                          <div class="p-4 w-1/2 order-1 flex flex-col justify-between">
+                            <h3 class="text-xl header-text text-primary mb-2 font-bold">Process Management</h3>
+                            <p class="text-gray-700 leading-relaxed mb-4">
+                              Process management encompasses the oversight of various organizational processes to ensure
+                              efficiency and compliance. Common issues include data entry errors, accounting
+                              discrepancies, and failures in mandatory reporting. Organizations need to implement
+                              standardized procedures, conduct regular training, and utilize technology to streamline
+                              processes and reduce the risk of errors.
+                            </p>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </section>
+                </div>
+
+
                 <p class="mb-4">
-                  Operational risk management is the oversight of loss resulting
-                  from inadequate or failed internal processes; systems; people;
-                  or external events.
+                  Operational risk management is crucial for organizations as it focuses on mitigating risks that arise
+                  from inadequate or failed internal processes, systems, personnel, or external events. This encompasses
+                  a wide range of areas, including but not limited to, operational failures, compliance issues, fraud
+                  incidents, and disruptions caused by unforeseen events. By identifying and addressing these risks
+                  proactively, organizations can protect their assets, ensure regulatory compliance, maintain
+                  operational efficiency, and ultimately safeguard their reputation in the marketplace. Effective
+                  operational risk management strategies involve continuous monitoring, robust reporting mechanisms, and
+                  a strong emphasis on fostering a risk-aware culture within the organization.
                 </p>
+
               </div>
             </div>
           </div>
+         
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
+  </div>
+  </div>
 
-    <div>
-      <footer
-        class="shadow-md py-4 sm:py-[30px] px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-40 mt-[50px] border border-gray-300"
-      >
-        <div class="flex flex-col sm:flex-row justify-between mb-[30px]">
-          <div class="about w-full sm:w-[50%]">
-            <div class="font-bold mb-[5px]">About RiskSafe</div>
-            We provide comprehensive risk management services, from assessment
-            and analysis to customized strategies, aimed at minimizing
-            uncertainty and maximizing opportunities. Our proactive approach
-            helps you stay ahead of threats and capitalize on emerging trends.
-          </div>
-          <div
-            class="about w-full mt-[10px] sm:mt-[0px] sm:w-[50%] flex flex-col sm:flex-row gap-[20px] sm:gap-[0px] sm:justify-around"
-          >
-            <div>
-              <div class="font-bold mb-[5px]">Contact Us</div>
-              <ul>
-                <li>Email: info@risksafe.co</li>
-                <li>Phone: 09076876557</li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="font-bold mb-[10px]">Company</div>
-              <ul class="flex gap-[7px] flex-col">
-                <li><a class="bb" href="/">Home</a></li>
-                <li><a class="bb" href="/about-risksafe">About RiskSafe</a></li>
-                <li><a class="bb" href="/contact-us">Contact Us</a></li>
-                <li><a class="bb" href="/contact-us">Resources</a></li>
-                <li><a class="bb" href="/contact-us">Pricing</a></li>
-                <li class="mt-[10px]">
-                  <a class="bb" href="/contact-us">Get Started</a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-        <div class="flex gap-[10px] mb-[10px] w-full">
-          Follow us on :
-          <a href="https://facebook.com/" target="_blank">
-            <i class="text-[20px] fa-brands fa-square-facebook"></i>
-          </a>
-          <a href="https://linedin.com/" target="_blank"
-            ><i class="text-[20px] fa-brands fa-linkedin"></i
-          ></a>
+  <div>
+    <footer
+      class="shadow-md py-4 sm:py-[30px] px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-40 mt-[50px] border border-gray-300">
+      <div class="flex flex-col sm:flex-row justify-between mb-[30px]">
+        <div class="about w-full sm:w-[50%]">
+          <div class="font-bold mb-[5px]">About RiskSafe</div>
+          We provide comprehensive risk management services, from assessment
+          and analysis to customized strategies, aimed at minimizing
+          uncertainty and maximizing opportunities. Our proactive approach
+          helps you stay ahead of threats and capitalize on emerging trends.
         </div>
         <div
-          class="flex justify-between border-[var(--primary)]-400 border-t-2 pt-[20px] pb-[-20px]"
-        >
-          <div>© RiskSafe - 2024</div>
-          <div class="flex gap-3">
-            <a class="bb" href="/contact-us">Terms of service</a>
-            <a class="bb" href="/contact-us">Privacy Policy</a>
-            <a class="bb hidden sm:block" href="/contact-us">RiskSafe Help</a>
+          class="about w-full mt-[10px] sm:mt-[0px] sm:w-[50%] flex flex-col sm:flex-row gap-[20px] sm:gap-[0px] sm:justify-around">
+          <div>
+            <div class="font-bold mb-[5px]">Contact Us</div>
+            <ul>
+              <li>Email: info@risksafe.co</li>
+              <li>Phone: 09076876557</li>
+            </ul>
+          </div>
+
+          <div>
+            <div class="font-bold mb-[10px]">Company</div>
+            <ul class="flex gap-[7px] flex-col">
+              <li><a class="bb" href="/">Home</a></li>
+              <li><a class="bb" href="/about-risksafe">About RiskSafe</a></li>
+              <li><a class="bb" href="/contact-us">Contact Us</a></li>
+              <li><a class="bb" href="/contact-us">Resources</a></li>
+              <li><a class="bb" href="/contact-us">Pricing</a></li>
+              <li class="mt-[10px]">
+                <a class="bb" href="/contact-us">Get Started</a>
+              </li>
+            </ul>
           </div>
         </div>
-      </footer>
-    </div>
-  </body>
+      </div>
+      <div class="flex gap-[10px] mb-[10px] w-full">
+        Follow us on :
+        <a href="https://facebook.com/" target="_blank">
+          <i class="text-[20px] fa-brands fa-square-facebook"></i>
+        </a>
+        <a href="https://linedin.com/" target="_blank"><i class="text-[20px] fa-brands fa-linkedin"></i></a>
+      </div>
+      <div class="flex justify-between border-[var(--primary)]-400 border-t-2 pt-[20px] pb-[-20px]">
+        <div>© RiskSafe - 2024</div>
+        <div class="flex gap-3">
+          <a class="bb" href="/contact-us">Terms of service</a>
+          <a class="bb" href="/contact-us">Privacy Policy</a>
+          <a class="bb hidden sm:block" href="/contact-us">RiskSafe Help</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</body>
+
 </html>
 <script>
   var toggleOpen = document.getElementById("toggleOpen");
