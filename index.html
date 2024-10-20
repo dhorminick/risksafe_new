@@ -145,8 +145,8 @@
           decade of experience
         </div>
         <div>
-          <button class="btn btn-primary">Try RiskSafe</button>
-          <button class="btn btn-secondary">Get Started</button>
+          <a href="/book-demo.html" class="btn btn-primary">Try RiskSafe</a>
+          <a href="/auth/sign-in.html" class="btn btn-secondary">Get Started</a>
         </div>
       </div>
       <div class="hidden sm:block w-[50%]">
@@ -492,10 +492,94 @@
           </ul>
         </div>
       </div>
-      <div class="hidden sm:flex justify-center">
-        <img
-          src="https://assets-us-01.kc-usercontent.com/56ac0847-da43-0017-b8aa-e0522019cff9/b303e764-5ef5-4c00-b057-0b1393a7bbd6/broker-feeds-min.png"
-        />
+      <div class="w-[50%] hidden sm:flex justify-center">
+        <img src="/assets/images/home/when.jpeg" />
+      </div>
+    </div>
+    <!-- https://assets-us-01.kc-usercontent.com/56ac0847-da43-0017-b8aa-e0522019cff9/b303e764-5ef5-4c00-b057-0b1393a7bbd6/broker-feeds-min.png -->
+
+    <!--  -->
+    <div>
+      <div class="bg-[var(--primary)] px-8 py-16 font-sans">
+        <div class="grid md:grid-cols-2 items-center gap-12 max-w-6xl mx-auto">
+          <div>
+            <h1 class="text-4xl font-bold text-white">
+              Why choose RiskSafe for your Risk Management?
+            </h1>
+            <div
+              class="mt-6 flex flex-col gap-[10px] text-sm text-white leading-relaxed"
+            >
+              <p>
+                Whether or not you have prior experience in risk management,
+                RiskSafe is designed to guide you through the process with ease.
+                Our platform comes equipped with predefined data sets and tools,
+                enabling you to quickly understand and implement effective risk
+                management strategies.
+              </p>
+              <p>
+                By offering a foundation of expertly curated data, we ensure
+                that both beginners and experienced professionals can make
+                informed decisions and proactively manage uncertainties.
+              </p>
+            </div>
+          </div>
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                50+
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  Predefined risk assessments to choose from
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                100+
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  Recommended compliance standard
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                99.9%
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  Uptime guaranteed for all services
+                </p>
+              </div>
+            </div>
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                24/7
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">Customer Support</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -657,7 +741,9 @@
           safety, startups and small business. If you want the best,
         </div>
         <div class="mt-[10px]">
-          <a class="btn btn-secondary">Book A Demo Now!</a>
+          <a href="/book-demo.html" class="btn btn-secondary"
+            >Book A Demo Now!</a
+          >
         </div>
       </div>
     </div>
@@ -674,6 +760,25 @@
               and analysis to customized strategies, aimed at minimizing
               uncertainty and maximizing opportunities. Our proactive approach
               helps you stay ahead of threats and capitalize on emerging trends.
+            </div>
+
+            <div class="mt-[30px]">
+              <div id="newsletterResponse"></div>
+              <form class="flex gap-[5px]" id="submitNewsletter">
+                <input
+                  name="useremail"
+                  type="email"
+                  required
+                  placeholder="Sign up for newsletter"
+                  class="flex-1 w-full text-sm text-gray-800 border border-gray-300 px-4 py-3 rounded-lg outline-[var(--primary)]"
+                />
+                <button
+                  type="submit"
+                  class="shadow-xl py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-[var(--primary)] focus:outline-none"
+                >
+                  <i class="fa-solid fa-paper-plane"></i>
+                </button>
+              </form>
             </div>
           </div>
           <div
@@ -725,6 +830,12 @@
     </div>
   </body>
 </html>
+
+<script
+  src="https://code.jquery.com/jquery-3.7.1.js"
+  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
+  crossorigin="anonymous"
+></script>
 <script>
   var toggleOpen = document.getElementById("toggleOpen");
   var toggleClose = document.getElementById("toggleClose");
@@ -740,4 +851,20 @@
 
   toggleOpen.addEventListener("click", handleClick);
   toggleClose.addEventListener("click", handleClick);
+
+  $("#submitNewsletter").submit(function (event) {
+    event.preventDefault();
+
+    var formValues = $(this).serialize();
+    $.post("ajax/newsletter", {
+      newsletter: formValues,
+    }).done(function (data) {
+      $("#newsletterResponse").html(data);
+
+      setTimeout(function () {
+        $("#submitNewsletter input").val("");
+        $("#newsletterResponse").html("");
+      }, 0);
+    });
+  });
 </script>

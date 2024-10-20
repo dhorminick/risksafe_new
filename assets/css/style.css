@@ -1,5 +1,6 @@
 :root {
-  --primary: #5d4037;
+  /* --primary: #6777ef; */
+  --primary: #1c1c84;
   --secondary: white;
 }
 @font-face {
@@ -20,6 +21,9 @@
 * {
   font-family: "Poppins-Normal";
   margin: 0;
+}
+body {
+  font-size: 15px;
 }
 .btn-primary {
   background-color: var(--primary);
