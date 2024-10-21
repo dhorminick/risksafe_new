@@ -137,7 +137,7 @@
     >
       <div class="text-[13px] text-gray-500">
         <a href="/" class="bb">Home</a> |
-        <a href="#" class="text-gray-500">Our Resources</a> |
+        <a href="#" class="text-gray-500">Resources</a> |
         <a href="#" class="text-gray-500">Control Self Assessment</a>
       </div>
       <h3 class="mb-[20px] font-bold text-4xl">Control Self Assessment</h3>
@@ -150,25 +150,21 @@
       </div>
     </div>
 
-    <div class="bg-white px-[20px]">
+    <div class="bg-white px-[20px] sm:mx-[30px] mx-0 mt-[-40px]">
       <div class="main-content py-8">
         <section class="section">
-          <div class="container mx-auto px-4">
+          <div class="container mx-auto">
             <div class="section-body">
+              <!-- Card -->
               <div
-                class="card flex flex-col sm:flex-row bg-white shadow-lg border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out"
+                class="p-[20px] card flex flex-col sm:flex-row bg-white shadow-lg border border-gray-200 rounded-lg overflow-hidden hover:shadow-2xl transition-shadow duration-300 ease-in-out"
               >
-                <div
-                  class="h-56 sm:h-auto sm:w-1/2 bg-no-repeat bg-cover bg-center object-cover object-center"
-                  style="
-                    background-image: url('../assets/images/resources/control-self-assessments-blog-20161123-k12532.jpg');
-                  "
-                ></div>
-
                 <!-- Card Content -->
                 <div class="p-6 sm:w-1/2">
                   <div class="card-header mb-4">
-                    <h3 class="text-2xl header-text text-primary">
+                    <h3
+                      class="text-2xl sm:text-[30px] header-text text-primary"
+                    >
                       Control Self Assessment
                     </h3>
                   </div>
@@ -181,39 +177,35 @@
                     </p>
                     <p class="mb-4">
                       CSA is a highly interactive and collaborative process that
-                      is designed to focus on processes and issues that are
-                      important to a business or organisation.
+                      focuses on processes and issues important to a business or
+                      organization.
                     </p>
                     <p class="mb-4">
                       The CSA should include the people actually doing the work
                       - not just those managing a process.
                     </p>
                     <p class="mb-4">
-                      Control measures that have been implemented must be
-                      reviewed, and if necessary, revised to make sure they work
-                      as planned.
+                      Control measures implemented must be reviewed and, if
+                      necessary, revised to make sure they work as planned.
                     </p>
                     <p class="mb-4">
-                      There are certain situations where you must review your
-                      control measures, including:
+                      There are situations where you must review your control
+                      measures, including:
                     </p>
-
                     <ul class="list-disc pl-6 mb-4">
                       <li class="mb-2">
-                        When the control measure is not effective in controlling
-                        the risk e.g. when an incident occurs
+                        When the control measure is not effective, e.g., when an
+                        incident occurs
                       </li>
                       <li class="mb-2">
-                        Before a change at the workplace that is likely to give
-                        rise to a new or different health and safety risk that
-                        the control measure may not effectively control
+                        Before a change that might lead to new or different
+                        risks the control may not cover
                       </li>
                       <li class="mb-2">
                         If a new hazard or risk is identified
                       </li>
                       <li class="mb-2">
-                        If the results of consultation indicate that a review is
-                        necessary
+                        If consultation results indicate a review is necessary
                       </li>
                       <li>
                         If a Health and Safety Representative requests a review
@@ -222,40 +214,40 @@
                   </div>
                 </div>
               </div>
+              <!-- End of Card -->
             </div>
           </div>
         </section>
       </div>
     </div>
 
-    <div class="container mx-auto px-4 mt-10">
+    <div class="sm:mx-[50px] mx-[20px] mt-[-40px] mb-10">
       <div class="flex flex-col sm:flex-row justify-between">
         <div
           class="flex-1 sm:mr-4 bg-white border border-gray-200 shadow-lg rounded-lg p-6 mb-4 sm:mb-0 hover:shadow-xl transition-shadow duration-300 ease-in-out"
         >
-          <h4 class="text-lg font-semibold text-primary mb-2">
-            Previous Resource
-          </h4>
-          <p class="text-gray-700 mb-4">Common Risk Types</p>
-          <a
-            href="./common-risk-type.html"
-            class="text-blue-600 font-semibold hover:underline"
-            >Read more</a
+          <small class="text-sm font-semibold text-primary mb-2"
+            ><i class="fa fa-caret-left"></i> Previous</small
           >
+          <a href="./common-risk-type.html" class="hover:underline">
+            <p class="text-gray-700 mt-4 text-[17px]">Common Risk Types</p>
+          </a>
         </div>
 
         <div
           class="flex-1 sm:ml-4 bg-white border border-gray-200 shadow-lg rounded-lg p-6 hover:shadow-xl transition-shadow duration-300 ease-in-out text-right"
         >
-          <h4 class="text-lg font-semibold text-primary mb-2">Next Resource</h4>
-          <p class="text-gray-700 mb-4">
-            How can a Controls Assessment help your business?
-          </p>
+          <small class="text-sm font-semibold text-primary mb-2"
+            >Next <i class="fa fa-caret-right"></i
+          ></small>
           <a
             href="./how-can-a-controls-assessment-help-your-business.html"
-            class="text-blue-600 font-semibold hover:underline"
-            >Read more</a
+            class="hover:underline"
           >
+            <p class="text-gray-700 mt-4 text-[17px]">
+              How can a Controls Assessment help your business?
+            </p>
+          </a>
         </div>
       </div>
     </div>
@@ -273,7 +265,12 @@
           tomorrow.
         </div>
         <div class="mt-[10px]">
-          <a href="/auth/sign-up" class="btn btn-secondary">Get Started Now!</a>
+          <a
+            href="/auth/sign-up"
+            class="btn btn-secondary flex items-center justify-center"
+          >
+            Get Started Now <i class="fa fa-caret-right ml-[5px]"></i>
+          </a>
         </div>
       </div>
     </div>
