@@ -15,7 +15,7 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="flex flex-col gap-[30px]">
+  <body class="flex flex-col gap-[0px]">
     <div class="fixed w-full">
       <header
         class="flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
@@ -131,147 +131,224 @@
       </header>
     </div>
 
-    <div class="mt-[55px]"></div>
+    <div class="mt-[85px]"></div>
 
-    <div class="flex justify-between">
+    <!-- 1 -->
+    <div
+      class="flex justify-between bg-[var(--light-blue)]"
+      style="min-height: calc(100dvh - 90px)"
+    >
       <div
         class="w-full sm:w-[50%] flex flex-col justify-start mt-[50px] sm:mt-0 sm:justify-center p-[30px] sm:p-[50px]"
       >
         <h1 class="font-bold text-[40px]">Risk Assessment Made Easy</h1>
-        <div class="my-[20px]">
-          Conduct Risk Assessments, Audit of Controls, Track Incidents, Create
-          Treatment Plans and manage your Compliance risks
-          <br />Built by Compliance Risk and Audit professionals with over a
-          decade of experience
+        <div class="my-[20px] flex w-full gap-[10px] flex-col">
+          <p>
+            Conduct Risk Assessments, Audit of Controls, Track Incidents, Create
+            Treatment Plans and Manage your Compliance Risks
+          </p>
+          <p>
+            Built by Compliance Risk and Audit professionals with over a decade
+            of experience
+          </p>
         </div>
-        <div>
+        <div class="mt-[20px]">
           <a href="/book-demo.html" class="btn btn-primary">Try RiskSafe</a>
           <a href="/auth/sign-in.html" class="btn btn-secondary">Get Started</a>
         </div>
       </div>
       <div class="hidden sm:block w-[50%]">
         <img
-          src="https://risksafe.co/assets/images/risk-management-flow-chart-hand-sketching-red-marker-transparent-wipe-board-92790683.webp"
+          class="h-[auto] w-full"
+          src="/assets/images/home/risk-management-flow-chart-hand-sketching-red-marker-transparent-wipe-board-92790683-removebg-preview.png"
         />
       </div>
     </div>
 
-    <!--  -->
-    <!-- <div class="hidden">
-      <div
-        class="flex flex-col sm:flex-row justify-between border border-red-400 bg-gray-100"
-      >
-        <div class="w-full sm:w-[50%]">
-          <h3 class="header-text">What Is Risk Management?</h3>
-          <div class="flex flex-col gap-[15px]">
-            <p>
-              When you remove risk, you increase the value of your business.
-              Success comes to those who quickly identify and eliminate risks in
-              the right order.
-            </p>
-            <p>
-              The key question is “What’s the most important uncertainty?” and
-              the answer should be targeted early.
-            </p>
-            <p>
-              Risk management is all about identifying and mitigating the
-              uncertainties — especially the company killers.
-            </p>
-            <p>
-              Luckily, with RiskSafe, Risk management can be performed in just 5
-              simple steps:
-            </p>
+    <!-- new 2: grid md:grid-cols-2 -->
+    <div
+      class="flex flex-col gap-[10px] px-[30px] sm:px-[100px] py-[50px] my-[20px]"
+    >
+      <div class="mb-[40px] text-center">
+        <h2
+          class="text-gray-800 text-[25px] sm:text-[30px] font-extrabold mb-[5px]"
+        >
+          Comprehensive Risk Management Suite
+        </h2>
+        <div class="text-[14px]">
+          RiskSafe simplifies operations, scales forms, and ensures data
+          accuracy for better decision-making.
+        </div>
+      </div>
+      <div class="flex justify-between items-center gap-[10px]">
+        <div class="w-full sm:w-[35%] flex flex-col gap-[10px] h-[max-content]">
+          <div class="active image-setter" data-img="compliance_no_sidebar.png">
+            <div class="head">Easy to Use Dashboard</div>
+            <div class="desc">
+              Navigate with ease. Our intuitive interface ensures you spend less
+              time learning and more time achieving your goals, making
+              management a breeze.
+            </div>
+          </div>
+          <div class="image-setter" data-img="form.png">
+            <div class="head">Flexible Form System</div>
+            <div class="desc">
+              Adaptable tools designed to customize and scale your forms
+              effortlessly, meeting all your needs with powerful and flexible
+              options.
+            </div>
+          </div>
+          <div class="image-setter" data-img="risks.png">
+            <div class="head">Efficient Data Management and Presentation</div>
+            <div class="desc">
+              Organize, store, and present data with precision. Implementing
+              robust practices ensures accuracy, drives informed decisions, and
+              streamlines operations.
+            </div>
           </div>
         </div>
-        <div class="w-full sm:w-[50%] mt-[50px] sm:mt-0 accordion-wrapper">
-          <div class="accordion">
-            <input type="radio" name="radio-a" id="check1" checked />
-            <label class="accordion-label" for="check1"
-              >1. Define Business Context</label
+        <div class="hidden sm:block sm:w-[65%]">
+          <div class="h-[max-content] w-full p-[20px]">
+            <img
+              src="/assets/images/home/compliance_no_sidebar.png"
+              class="transition-opacity duration-500 ease-in-out"
+              id="mainImage"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- new 3 -->
+    <div class="flex justify-between bg-[var(--light-blue)]">
+      <div class="flex flex-col w-full sm:w-[50%] p-[30px] sm:p-[100px]">
+        <h3 class="header-text !mb-[20px]">
+          Built for Compliance and Risk Officers
+        </h3>
+        <div>
+          One Platform for all of your Compliance Risk Management Monitoring.
+        </div>
+        <div class="mt-[5px]">
+          We bring together automated assurance, risk assessments, audit,
+          incident management and reporting.
+        </div>
+        <div class="mt-[5px]">
+          Built by Risk & Compliance professionals with over a decade of
+          experience.
+        </div>
+        <a
+          href="/auth/sign-in.html"
+          class="mt-[30px] btn btn-primary w-[max-content] flex justify-center items-center gap-[5px]"
+          >Get Started <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="w-[50%] hidden sm:flex justify-center">
+        <img src="/assets/images/home/when.jpeg" class="" />
+      </div>
+    </div>
+
+    <!-- 4 -->
+    <div>
+      <div class="bg-[var(--primary)] px-[30px] sm:px-[100px] py-16 font-sans">
+        <div class="grid md:grid-cols-2 items-center gap-12 mx-auto">
+          <div>
+            <h1 class="text-4xl font-bold text-white">Why choose RiskSafe?</h1>
+            <div
+              class="mt-6 flex flex-col gap-[10px] text-sm text-white leading-relaxed"
             >
-            <div class="accordion-content">
               <p>
-                what are the goals of the business, what environment do you
-                operate in and what limitations does your business have?
+                Whether or not you have prior experience in risk management,
+                RiskSafe is designed to guide you through the process with ease.
+              </p>
+              <p>
+                Our platform comes equipped with predefined data sets and tools,
+                enabling you to quickly understand and implement effective risk
+                management strategies.
+              </p>
+              <p>
+                RiskSafe Automated monitoring solution saves us from doing
+                manual testing and all the co-ordination headaches
               </p>
             </div>
           </div>
-          <div class="accordion">
-            <input type="radio" name="radio-a" id="check2" />
-            <label class="accordion-label" for="check2"
-              >2. Identify the Risks & Hazards</label
+          <div class="grid sm:grid-cols-2 gap-6">
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
             >
-            <div class="accordion-content">
-              <p>Find out what could go wrong or cause harm in your business</p>
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                3x
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  return on investment in a year
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="accordion">
-            <input type="radio" name="radio-a" id="check3" />
-            <label class="accordion-label" for="check3"
-              >3. Assess, understand and document risks</label
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
             >
-            <div class="accordion-content">
-              <p>
-                Understand the nature of the consequence that could becaused by
-                the Risk or Hazard and the likelihood of it happening
-              </p>
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                $220k
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  savings per year when using full suite of tools
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="accordion">
-            <input type="radio" name="radio-a" id="check4" />
-            <label class="accordion-label" for="check4">4. Control risks</label>
-            <div class="accordion-content">
-              <p>
-                Create custom controls and treatments, then Implement the most
-                effective measure that is realistic
-              </p>
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                3 FTE
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">
+                  reduced from compliance team
+                </p>
+              </div>
             </div>
-          </div>
-          <div class="accordion">
-            <input type="radio" name="radio-a" id="check5" />
-            <label class="accordion-label" for="check5">5. Review</label>
-            <div class="accordion-content">
-              <p>
-                Ensure implemented controls and treatments are performing as
-                expected, document improvements and print risk reports
-              </p>
+            <div
+              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
+            >
+              <h3
+                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
+              >
+                24/7
+              </h3>
+              <div class="mt-4">
+                <p class="text-sm text-[var(--primary)]">Customer Support</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div> -->
+    </div>
 
-    <!--  -->
-    <div>
-      <div class="bg-[#F7F7F7]">
+    <div class="mt-[20px]">
+      <div class="bg-[#F7F7F7] min-h-[500px]">
         <div class="max-w-7xl mx-auto py-16 px-4">
           <h2
             class="text-gray-800 text-4xl font-extrabold text-center mb-[20px]"
           >
-            What Is Risk Management?
+            What RiskSafe offers?
           </h2>
-          <div class="flex flex-col gap-[5px] mb-16">
+          <div class="!hidden flex flex-col gap-[5px] mb-16">
             <p>
               When you remove risk, you increase the value of your business.
               Success comes to those who quickly identify and eliminate risks in
               the right order.
             </p>
-            <p>
-              The key question is “What’s the most important uncertainty?” and
-              the answer should be targeted early.
-            </p>
-            <p>
-              Risk management is all about identifying and mitigating the
-              uncertainties — especially the company killers.
-            </p>
-            <p>
-              Luckily, with RiskSafe, Risk management can be performed in just
-              five (5) simple steps:
-            </p>
           </div>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:max-w-md mx-auto"
+            class="!hidden grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:max-w-md mx-auto"
           >
             <div
               class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
@@ -293,12 +370,8 @@
                   />
                 </svg>
                 <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  1. Define Business Context
+                  Compliance Standards.
                 </h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                  what are the goals of the business, what environment do you
-                  operate in and what limitations does your business have?
-                </p>
               </div>
             </div>
 
@@ -338,11 +411,8 @@
                   </g>
                 </svg>
                 <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  2. Identify the Risks & Hazards
+                  Compliance Policies
                 </h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                  Find out what could go wrong or cause harm in your business
-                </p>
               </div>
             </div>
 
@@ -372,92 +442,9 @@
                   </g>
                 </svg>
                 <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  3. Assess, understand and document risks
+                  Risk Assessments through various modules including Health &
+                  Safety, AML, Community and Not for Profit
                 </h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                  Understand the nature of the consequence that could becaused
-                  by the Risk or Hazard and the likelihood of it happening
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 682.667 682.667"
-                >
-                  <defs>
-                    <clipPath id="a" clipPathUnits="userSpaceOnUse">
-                      <path d="M0 512h512V0H0Z" data-original="#000000" />
-                    </clipPath>
-                  </defs>
-                  <g
-                    fill="none"
-                    stroke="#007bff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                    stroke-width="40"
-                    clip-path="url(#a)"
-                    transform="matrix(1.33 0 0 -1.33 0 682.667)"
-                  >
-                    <path
-                      d="M256 492 60 410.623v-98.925C60 183.674 137.469 68.38 256 20c118.53 48.38 196 163.674 196 291.698v98.925z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M178 271.894 233.894 216 334 316.105"
-                      data-original="#000000"
-                    />
-                  </g>
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  4. Control risks
-                </h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                  Create custom controls and treatments, then Implement the most
-                  effective measure that is realistic
-                </p>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 24 24"
-                >
-                  <g fill-rule="evenodd" clip-rule="evenodd">
-                    <path
-                      d="M17.03 8.97a.75.75 0 0 1 0 1.06l-4.2 4.2a.75.75 0 0 1-1.154-.114l-1.093-1.639L8.03 15.03a.75.75 0 0 1-1.06-1.06l3.2-3.2a.75.75 0 0 1 1.154.114l1.093 1.639L15.97 8.97a.75.75 0 0 1 1.06 0z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M13.75 9.5a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-1.25H14.5a.75.75 0 0 1-.75-.75z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M3.095 3.095C4.429 1.76 6.426 1.25 9 1.25h6c2.574 0 4.57.51 5.905 1.845C22.24 4.429 22.75 6.426 22.75 9v6c0 2.574-.51 4.57-1.845 5.905C19.571 22.24 17.574 22.75 15 22.75H9c-2.574 0-4.57-.51-5.905-1.845C1.76 19.571 1.25 17.574 1.25 15V9c0-2.574.51-4.57 1.845-5.905zm1.06 1.06C3.24 5.071 2.75 6.574 2.75 9v6c0 2.426.49 3.93 1.405 4.845.916.915 2.419 1.405 4.845 1.405h6c2.426 0 3.93-.49 4.845-1.405.915-.916 1.405-2.419 1.405-4.845V9c0-2.426-.49-3.93-1.405-4.845C18.929 3.24 17.426 2.75 15 2.75H9c-2.426 0-3.93.49-4.845 1.405z"
-                      data-original="#000000"
-                    />
-                  </g>
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  5. Review
-                </h3>
-                <p class="text-gray-500 text-sm leading-relaxed">
-                  Ensure implemented controls and treatments are performing as
-                  expected, document improvements and print risk reports
-                </p>
               </div>
             </div>
           </div>
@@ -465,292 +452,34 @@
       </div>
     </div>
 
-    <!--  -->
-    <div class="flex justify-between">
-      <div class="flex flex-col w-full sm:w-[50%] p-[30px] sm:p-[50px]">
-        <h3 class="header-text">When Should You Perform Risk Assessment?</h3>
-        <div>
-          A strong risk assessment investigates all areas of the workplace and
-          considers elements such as hazards, tasks and organizational
-          strategies to curtail them. They look at the state of electrical and
-          fire safety, hazardous substances, stress, violence, cleaning and
-          working hours, to name just a few.
-        </div>
-        <div class="mt-[10px]">
-          Risk Assessment is a neccessity to business growth and management, and
-          should be performed:
-        </div>
-        <div class="mt-[20px] ml-[20px]">
-          <ul class="list-disc">
-            <li>
-              As soon as possible, if a risk assessment has not yet been
-              completed for your work tasks or activities,
-            </li>
-            <li>Whenever any new work is planned,</li>
-            <li>Whenever a significant change occurs,</li>
-            <li>After an incident or an accident.</li>
-          </ul>
-        </div>
-      </div>
-      <div class="w-[50%] hidden sm:flex justify-center">
-        <img src="/assets/images/home/when.jpeg" />
-      </div>
-    </div>
-    <!-- https://assets-us-01.kc-usercontent.com/56ac0847-da43-0017-b8aa-e0522019cff9/b303e764-5ef5-4c00-b057-0b1393a7bbd6/broker-feeds-min.png -->
-
-    <!--  -->
-    <div>
-      <div class="bg-[var(--primary)] px-8 py-16 font-sans">
-        <div class="grid md:grid-cols-2 items-center gap-12 max-w-6xl mx-auto">
-          <div>
-            <h1 class="text-4xl font-bold text-white">
-              Why choose RiskSafe for your Risk Management?
-            </h1>
-            <div
-              class="mt-6 flex flex-col gap-[10px] text-sm text-white leading-relaxed"
-            >
-              <p>
-                Whether or not you have prior experience in risk management,
-                RiskSafe is designed to guide you through the process with ease.
-                Our platform comes equipped with predefined data sets and tools,
-                enabling you to quickly understand and implement effective risk
-                management strategies.
-              </p>
-              <p>
-                By offering a foundation of expertly curated data, we ensure
-                that both beginners and experienced professionals can make
-                informed decisions and proactively manage uncertainties.
-              </p>
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                50+
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  Predefined risk assessments to choose from
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                100+
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  Recommended compliance standard
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                99.9%
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  Uptime guaranteed for all services
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                24/7
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">Customer Support</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
-    <div>
-      <div class="bg-[#F7F7F7]">
-        <div class="max-w-7xl mx-auto py-16 px-4">
-          <h2
-            class="text-gray-800 text-4xl font-extrabold text-center mb-[20px]"
-          >
-            Benefits Of Risk Management?
-          </h2>
-          <div class="flex flex-col gap-[5px] mb-10">
-            <p>
-              Risk assessments with RiskSafe enable you to gather more knowledge
-              on the risks present in your workplace that could cause falls,
-              broken bones and fires. Additionally, risk assessments can help
-              save money –- by helping reduce incidents and subsequent legal
-              liability. In this case, a risk assessment can protect the
-              organization.
-            </p>
-            <p>A few of the benefits includes:</p>
-          </div>
-
-          <div class="">
-            <div class="w-full mt-[50px] sm:mt-0 accordion-wrapper">
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check1" checked />
-                <label class="accordion-label" for="check1"
-                  >Greater Awareness of Risks in the Workplace</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    First and foremost, risk assessments will provide clarity
-                    around how hazards and risks have been identified and
-                    minimized or eliminated. This helps your EHS team understand
-                    what hazards and risks they must be most aware of in their
-                    place of work.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check3" />
-                <label class="accordion-label" for="check3"
-                  >Employee Education</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    Carrying out a risk assessment properly means ensuring all
-                    the relevant staff members are made aware of the required
-                    procedures and guidelines for tackling risk in the
-                    workplace. Many organizations benefit from the use of Staff
-                    Engagement software to provide dynamic training to help them
-                    immerse health and safety awareness within day to day
-                    activity.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check2" />
-                <label class="accordion-label" for="check2"
-                  >Identification of Likeliness and Scale of Potential
-                  Risks</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    A successful risk assessment doesn’t just list hazards and
-                    risks. By using a risk matrix, companies can identify the
-                    most urgent risks and outline the severity and likelihood of
-                    impact for each
-                  </p>
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check4" />
-                <label class="accordion-label" for="check4"
-                  >Determine What Actions Are Required</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    Carrying out a successful risk assessment often means you’ll
-                    be left with new, very useful data. This data will help you
-                    identify the areas within your workplace that need the most
-                    attention and enable you to put effective control measures
-                    in place to reduce risk.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check5" />
-                <label class="accordion-label" for="check5"
-                  >Proper Documentation</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    There is simply no way to get around the need for documents.
-                    A risk assessment will help create a repository of hazard
-                    findings. This is not only beneficial for transparency
-                    across the company but can help with carrying out audits and
-                    passing legal safety measures. Compliance software can help
-                    streamline the recordkeeping process for you so you can
-                    quickly and easily demonstrate your compliance with
-                    regulations when required.
-                  </p>
-                </div>
-              </div>
-
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check6" />
-                <label class="accordion-label" for="check6"
-                  >Help With Budget Allocation</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    With a risk assessment carried out, your organization has a
-                    much clearer understanding of the required health and safety
-                    budget moving forward. Knowing the severity and likelihood
-                    of a hazard will allow your organization to budget
-                    accordingly to control or eliminate found hazards.
-                  </p>
-                </div>
-              </div>
-              <div class="accordion">
-                <input type="radio" name="radio-a" id="check7" />
-                <label class="accordion-label" for="check7"
-                  >Reduced Incidents in the Workplace</label
-                >
-                <div class="accordion-content">
-                  <p>
-                    But most importantly, the benefit of risk assessments is
-                    simple: the minimization and hopeful removal of risks. By
-                    carefully inspecting your workplace and taking proper next
-                    steps, you can substantially reduce the number of incidents
-                    at your place of work. A lower incident number displays an
-                    organization’s integrity and dedication when it comes to
-                    caring for their employees, which is beneficial for customer
-                    support.
-                  </p>
-                </div>
-              </div>
-
-              <!--  -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!--  -->
-    <div class="flex justify-center items-center">
+    <!-- 6 -->
+    <div class="flex justify-center items-center z-[2] mt-[20px]">
       <div
         class="cta w-full flex flex-col rounded-[0] sm:rounded-[10px] gap-[20px] p-[30px] sm:p-[50px] justify-center items-center sm:w-[80%]"
       >
-        <h1 class="font-bold text-[30px] text-center">
-          Why RiskSafe is highly regarded by customers?
+        <h1 class="font-bold sm:w-[700px] w-full text-[30px] text-center">
+          Discover why RiskSafe is loved by Compliance Risk Officers around the
+          world
         </h1>
-        <div class="sm:w-[500px] w-full text-center">
-          Our team is made up of Risk Managers with experience in banking,
-          safety, startups and small business. If you want the best,
-        </div>
-        <div class="mt-[10px]">
-          <a href="/book-demo.html" class="btn btn-secondary"
-            >Book A Demo Now!</a
-          >
+        <!-- <div class="sm:w-[500px] w-full text-center">
+          Discover why RiskSafe is loved by Compliance Risk Officers around the
+          world!
+        </div> -->
+        <div class="mt-[10px] flex gap-[10px]">
+          <a href="/book-demo.html" class="btn btn-secondary">Book Demo</a>
+          <a
+            href="/auth/sign-in.html"
+            class="btn btn-secondary gap-[5px] justify-center items-center"
+            >Get Started <i class="fa fa-arrow-right"></i
+          ></a>
         </div>
       </div>
     </div>
 
+    <!-- footer -->
     <div>
       <footer
-        class="shadow-md py-4 sm:py-[30px] z-10 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide mt-[50px] border border-gray-300"
+        class="shadow-md py-4 sm:py-[30px] z-1 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide mt-[20px] border border-gray-300"
       >
         <div class="flex flex-col sm:flex-row justify-between mb-[30px]">
           <div class="about w-full sm:w-[50%]">
@@ -867,4 +596,53 @@
       }, 0);
     });
   });
+
+  $(".image-setter").click(function (e) {
+    var img = $(this).attr("data-img");
+    $(".image-setter").removeClass("active");
+    $("#mainImage").attr("src", `/assets/images/home/${img}`);
+    $(this).addClass("active");
+  });
 </script>
+<style lang="scss">
+  img#mainImage {
+    border-radius: 10px;
+    /* border: 3px solid rgba(235, 235, 235, 0.5); */
+    border: 1px solid var(--primary);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-user-drag: none;
+    cursor: pointer;
+  }
+  .image-setter {
+    border: 1px solid rgba(235, 235, 235, 0.5);
+    border-left: 10px solid rgba(235, 235, 235, 0.5);
+    border-radius: 5px;
+    min-height: 200px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    padding: 30px;
+
+    .head {
+      font-size: 23px;
+      font-weight: 700;
+    }
+    .desc {
+      font-size: 13px;
+      color: rgb(0, 0, 0, 0.7);
+    }
+    &.active {
+      border-left: 10px solid var(--primary);
+      background-color: #f7f9fc;
+
+      .head {
+        color: var(--primary);
+      }
+    }
+  }
+
+  .image-setter:not(.active):hover {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  }
+</style>
