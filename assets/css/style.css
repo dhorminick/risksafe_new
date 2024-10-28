@@ -26,6 +26,9 @@
 body {
   font-size: 15px;
 }
+.btn:hover {
+  opacity: 0.9;
+}
 .btn-primary {
   background-color: var(--primary);
   color: white;
@@ -34,6 +37,10 @@ body {
   background-color: white;
   border: 1px solid var(--primary);
   color: var(--primary);
+}
+.btn-secondary:not(.nh):hover {
+  background-color: var(--primary);
+  color: white;
 }
 .btn {
   padding: 10px 20px;
