@@ -3,808 +3,122 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
-
-    <link rel="stylesheet" href="/assets/css/style.css" />
+    <title>RiskSafe - Risk Management & Compliance</title>
+    <script src="https://cdn.tailwindcss.com"></script>
     <link
       rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
-      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ=="
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body class="flex flex-col gap-[0px]">
-    <div class="fixed w-full z-50">
-      <header
-        class="flex shadow-md py-4 px-4 sm:px-10 bg-white font-[sans-serif] min-h-[70px] tracking-wide relative z-50"
-      >
-        <div class="flex flex-wrap items-center justify-between gap-5 w-full">
-          <a href="javascript:void(0)"
-            ><img
-              src="https://risksafe.co/assets/images/logo-edit.jpg"
-              alt="logo"
-              class="w-36"
-            />
-          </a>
-
-          <div
-            id="collapseMenu"
-            class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50"
+  <body class="bg-gray-100 text-gray-900 flex flex-col min-h-[100dvh]">
+    <section class="py-[20px] border shadow-md">
+      <div class="flex justify-between items-center">
+        <a href="#" class="font-semibold text-[140%]">
+          RISK
+          <span
+            class="bg-[var(--primary)] px-1 !py-0 rounded-[5px] font-semibold text-[100%] text-white"
+            >SAFE</span
           >
-            <button
-              id="toggleClose"
-              class="lg:hidden fixed top-2 right-4 z-[100] rounded-full bg-white p-3"
-            >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-4 fill-black"
-                viewBox="0 0 320.591 320.591"
-              >
-                <path
-                  d="M30.391 318.583a30.37 30.37 0 0 1-21.56-7.288c-11.774-11.844-11.774-30.973 0-42.817L266.643 10.665c12.246-11.459 31.462-10.822 42.921 1.424 10.362 11.074 10.966 28.095 1.414 39.875L51.647 311.295a30.366 30.366 0 0 1-21.256 7.288z"
-                  data-original="#000000"
-                ></path>
-                <path
-                  d="M287.9 318.583a30.37 30.37 0 0 1-21.257-8.806L8.83 51.963C-2.078 39.225-.595 20.055 12.143 9.146c11.369-9.736 28.136-9.736 39.504 0l259.331 257.813c12.243 11.462 12.876 30.679 1.414 42.922-.456.487-.927.958-1.414 1.414a30.368 30.368 0 0 1-23.078 7.288z"
-                  data-original="#000000"
-                ></path>
-              </svg>
-            </button>
-
-            <ul
-              class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50"
-            >
-              <li class="mb-6 hidden max-lg:block">
-                <a href="javascript:void(0)"
-                  ><img
-                    src="https://risksafe.co/assets/images/logo-edit.jpg"
-                    alt="logo"
-                    class="w-36"
-                  />
-                </a>
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/"
-                  class="hover:text-[var(--primary)] text-[var(--primary)] block font-semibold text-[15px]"
-                  >Home</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/about-risksafe.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >About RiskSafe</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="risksafe-resources.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Resources</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/pricing.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Pricing</a
-                >
-              </li>
-              <li class="max-lg:border-b border-gray-300 max-lg:py-3 px-3">
-                <a
-                  href="/contact-us.html"
-                  class="hover:text-[var(--primary)] text-gray-500 block font-semibold text-[15px]"
-                  >Contact Us</a
-                >
-              </li>
-            </ul>
-          </div>
-
-          <div class="flex max-lg:ml-auto space-x-3">
-            <a href="/auth/sign-in.html" class="btn btn-primary">Sign In</a>
-            <a
-              href="/auth/sign-up.html"
-              class="btn btn-secondary hidden sm:block"
-            >
-              Get Started
-            </a>
-
-            <button id="toggleOpen" class="lg:hidden">
-              <svg
-                class="w-7 h-7"
-                fill="#000"
-                viewBox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z"
-                  clip-rule="evenodd"
-                ></path>
-              </svg>
-            </button>
-          </div>
-        </div>
-      </header>
-    </div>
-
-    <div class="mt-[85px]"></div>
-
-    <!-- 1 -->
-    <div
-      class="flex justify-between bg-[var(--light-blue)]"
-      style="min-height: calc(100dvh - 90px)"
-    >
-      <div
-        class="w-full sm:w-[50%] flex flex-col justify-start mt-[50px] sm:mt-0 sm:justify-center p-[30px] sm:p-[50px]"
-      >
-        <h1 class="font-bold text-[45px]">Risk Assessment Made Easy</h1>
-        <div class="my-[20px] flex w-full gap-[10px] flex-col">
-          <p>
-            Conduct Risk Assessments, Audit of Controls, Track Incidents, Create
-            Treatment Plans and Manage your Compliance Risks
-          </p>
-          <p>
-            Built by Compliance Risk and Audit professionals with over a decade
-            of experience
-          </p>
-        </div>
-        <div class="mt-[20px]">
-          <a href="/book-demo.html" class="btn btn-primary">Try RiskSafe</a>
-          <a href="/auth/sign-in.html" class="btn btn-secondary">Get Started</a>
-        </div>
-      </div>
-      <div class="hidden sm:block w-[50%]">
-        <img
-          class="h-[auto] w-full"
-          src="/assets/images/home/risk-management-flow-chart-hand-sketching-red-marker-transparent-wipe-board-92790683-removebg-preview.png"
-        />
-      </div>
-    </div>
-
-    <!-- new 2: grid md:grid-cols-2 -->
-    <div
-      class="flex flex-col gap-[10px] px-[30px] sm:px-[100px] py-[50px] my-[20px]"
-    >
-      <div class="mb-[40px] text-center">
-        <h2
-          class="text-gray-800 text-[25px] sm:text-[30px] font-extrabold mb-[5px]"
-        >
-          Comprehensive Risk Management Suite
-        </h2>
-        <div class="text-[14px]">
-          RiskSafe simplifies operations, scales forms, and ensures data
-          accuracy for better decision-making.
-        </div>
-      </div>
-      <div class="flex justify-between items-center gap-[10px]">
-        <div class="w-full sm:w-[35%] flex flex-col gap-[10px] h-[max-content]">
-          <div class="active image-setter" data-img="compliance_no_sidebar.png">
-            <div class="head">Easy to Use Dashboard</div>
-            <div class="desc">
-              Navigate with ease. Our intuitive interface ensures you spend less
-              time learning and more time achieving your goals, making
-              management a breeze.
-            </div>
-          </div>
-          <div class="image-setter" data-img="form.png">
-            <div class="head">Flexible Form System</div>
-            <div class="desc">
-              Adaptable tools designed to customize and scale your forms
-              effortlessly, meeting all your needs with powerful and flexible
-              options.
-            </div>
-          </div>
-          <div class="image-setter" data-img="risks.png">
-            <div class="head">Efficient Data Management and Presentation</div>
-            <div class="desc">
-              Organize, store, and present data with precision. Implementing
-              robust practices ensures accuracy, drives informed decisions, and
-              streamlines operations.
-            </div>
-          </div>
-        </div>
-        <div class="hidden sm:block sm:w-[65%]">
-          <div class="h-[max-content] w-full p-[20px]">
-            <img
-              src="/assets/images/home/compliance_no_sidebar.png"
-              class="transition-opacity duration-500 ease-in-out"
-              id="mainImage"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <!-- new 3 -->
-    <div class="flex justify-between bg-[var(--light-blue)]">
-      <div class="flex flex-col w-full sm:w-[50%] p-[30px] sm:p-[100px]">
-        <h3 class="header-text !mb-[20px]">
-          Built for Compliance and Risk Officers
-        </h3>
-        <div>
-          One Platform for all of your Compliance Risk Management Monitoring.
-        </div>
-        <div class="mt-[5px]">
-          We bring together automated assurance, risk assessments, audit,
-          incident management and reporting.
-        </div>
-        <div class="mt-[5px]">
-          Built by Risk & Compliance professionals with over a decade of
-          experience.
-        </div>
-        <a
-          href="/auth/sign-in.html"
-          class="mt-[30px] btn btn-primary w-[max-content] flex justify-center items-center gap-[5px]"
-          >Get Started <i class="fa fa-arrow-right"></i>
         </a>
-      </div>
-      <div class="w-[50%] hidden sm:flex justify-center">
-        <img src="/assets/images/home/when.jpeg" class="" />
-      </div>
-    </div>
-
-    <!-- 4 -->
-    <div>
-      <div class="bg-[var(--primary)] px-[30px] sm:px-[100px] py-16 font-sans">
-        <div class="grid md:grid-cols-2 items-center gap-12 mx-auto">
-          <div>
-            <h1 class="text-4xl font-bold text-white">Why choose RiskSafe?</h1>
-            <div
-              class="mt-6 flex flex-col gap-[10px] text-sm text-white leading-relaxed"
-            >
-              <p>
-                Whether or not you have prior experience in risk management,
-                RiskSafe is designed to guide you through the process with ease.
-              </p>
-              <p>
-                Our platform comes equipped with predefined data sets and tools,
-                enabling you to quickly understand and implement effective risk
-                management strategies.
-              </p>
-              <p>
-                RiskSafe Automated monitoring solution saves us from doing
-                manual testing and all the co-ordination headaches
-              </p>
-            </div>
-          </div>
-          <div class="grid sm:grid-cols-2 gap-6">
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                3x
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  return on investment in a year
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                $220k
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  savings per year when using full suite of tools
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                3 FTE
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">
-                  reduced from compliance team
-                </p>
-              </div>
-            </div>
-            <div
-              class="bg-white flex flex-col items-center text-center rounded-md md:p-8 p-6"
-            >
-              <h3
-                class="lg:text-5xl text-3xl font-extrabold text-[var(--primary)]"
-              >
-                24/7
-              </h3>
-              <div class="mt-4">
-                <p class="text-sm text-[var(--primary)]">Customer Support</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="mt-[20px]">
-      <div class="bg-[var(--light-blue)] min-h-[500px]">
-        <div class="py-16 px-4 mx-[30px] sm:mx-[50px]">
-          <h2 class="text-gray-800 text-4xl font-extrabold text-center">
-            What RiskSafe offers?
-          </h2>
-          <div class="mb-[40px] text-[14] text-center">
-            With RiskSafe, you’re equipped with the tools to manage risks
-            effectively and confidently
-          </div>
-          <div class="!hidden flex flex-col gap-[5px] mb-16">
-            <p>
-              When you remove risk, you increase the value of your business.
-              Success comes to those who quickly identify and eliminate risks in
-              the right order.
-            </p>
-          </div>
-
-          <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-md:max-w-md mx-auto"
+        <div class="flex items-center gap-[20px]">
+          <a class="bb h-max" href="what-we-offer.html">What we offer</a>
+          <a class="btn" target="_blank" href="https://risksafe.co/auth/sign-up"
+            >Try Demo</a
           >
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 32 32"
-                >
-                  <path
-                    d="M28.068 12h-.128a.934.934 0 0 1-.864-.6.924.924 0 0 1 .2-1.01l.091-.091a2.938 2.938 0 0 0 0-4.147l-1.511-1.51a2.935 2.935 0 0 0-4.146 0l-.091.091A.956.956 0 0 1 20 4.061v-.129A2.935 2.935 0 0 0 17.068 1h-2.136A2.935 2.935 0 0 0 12 3.932v.129a.956.956 0 0 1-1.614.668l-.086-.091a2.935 2.935 0 0 0-4.146 0l-1.516 1.51a2.938 2.938 0 0 0 0 4.147l.091.091a.935.935 0 0 1 .185 1.035.924.924 0 0 1-.854.579h-.128A2.935 2.935 0 0 0 1 14.932v2.136A2.935 2.935 0 0 0 3.932 20h.128a.934.934 0 0 1 .864.6.924.924 0 0 1-.2 1.01l-.091.091a2.938 2.938 0 0 0 0 4.147l1.51 1.509a2.934 2.934 0 0 0 4.147 0l.091-.091a.936.936 0 0 1 1.035-.185.922.922 0 0 1 .579.853v.129A2.935 2.935 0 0 0 14.932 31h2.136A2.935 2.935 0 0 0 20 28.068v-.129a.956.956 0 0 1 1.614-.668l.091.091a2.935 2.935 0 0 0 4.146 0l1.511-1.509a2.938 2.938 0 0 0 0-4.147l-.091-.091a.935.935 0 0 1-.185-1.035.924.924 0 0 1 .854-.58h.128A2.935 2.935 0 0 0 31 17.068v-2.136A2.935 2.935 0 0 0 28.068 12ZM29 17.068a.933.933 0 0 1-.932.932h-.128a2.956 2.956 0 0 0-2.083 5.028l.09.091a.934.934 0 0 1 0 1.319l-1.511 1.509a.932.932 0 0 1-1.318 0l-.09-.091A2.957 2.957 0 0 0 18 27.939v.129a.933.933 0 0 1-.932.932h-2.136a.933.933 0 0 1-.932-.932v-.129a2.951 2.951 0 0 0-5.028-2.082l-.091.091a.934.934 0 0 1-1.318 0l-1.51-1.509a.934.934 0 0 1 0-1.319l.091-.091A2.956 2.956 0 0 0 4.06 18h-.128A.933.933 0 0 1 3 17.068v-2.136A.933.933 0 0 1 3.932 14h.128a2.956 2.956 0 0 0 2.083-5.028l-.09-.091a.933.933 0 0 1 0-1.318l1.51-1.511a.932.932 0 0 1 1.318 0l.09.091A2.957 2.957 0 0 0 14 4.061v-.129A.933.933 0 0 1 14.932 3h2.136a.933.933 0 0 1 .932.932v.129a2.956 2.956 0 0 0 5.028 2.082l.091-.091a.932.932 0 0 1 1.318 0l1.51 1.511a.933.933 0 0 1 0 1.318l-.091.091A2.956 2.956 0 0 0 27.94 14h.128a.933.933 0 0 1 .932.932Z"
-                    data-original="#000000"
-                  />
-                  <path
-                    d="M16 9a7 7 0 1 0 7 7 7.008 7.008 0 0 0-7-7Zm0 12a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Z"
-                    data-original="#000000"
-                  />
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  Data Management
-                </h3>
-                <div class="text-gray-500 text-sm leading-relaxed ml-[15px]">
-                  <ul class="list-disc">
-                    <li>
-                      Streamline Compliance requirements, Risk Assessments,
-                      Policies and Reporting
-                    </li>
-                    <li>
-                      No more wasting time manually capturing risk and
-                      compliance information across so many documents
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 682.667 682.667"
-                >
-                  <defs>
-                    <clipPath id="a" clipPathUnits="userSpaceOnUse">
-                      <path d="M0 512h512V0H0Z" data-original="#000000" />
-                    </clipPath>
-                  </defs>
-                  <g
-                    fill="none"
-                    stroke="#007bff"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-miterlimit="10"
-                    stroke-width="40"
-                    clip-path="url(#a)"
-                    transform="matrix(1.33 0 0 -1.33 0 682.667)"
-                  >
-                    <path
-                      d="M256 492 60 410.623v-98.925C60 183.674 137.469 68.38 256 20c118.53 48.38 196 163.674 196 291.698v98.925z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M178 271.894 233.894 216 334 316.105"
-                      data-original="#000000"
-                    />
-                  </g>
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  Dashboard Overview
-                </h3>
-                <div class="text-gray-500 text-sm leading-relaxed ml-[15px]">
-                  <ul class="list-disc">
-                    <li>
-                      Easily view risk position and compliance effectiveness on
-                      a clear dashboard
-                    </li>
-                    <li>Capture all key risk information in one place</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 24 24"
-                >
-                  <g fill-rule="evenodd" clip-rule="evenodd">
-                    <path
-                      d="M17.03 8.97a.75.75 0 0 1 0 1.06l-4.2 4.2a.75.75 0 0 1-1.154-.114l-1.093-1.639L8.03 15.03a.75.75 0 0 1-1.06-1.06l3.2-3.2a.75.75 0 0 1 1.154.114l1.093 1.639L15.97 8.97a.75.75 0 0 1 1.06 0z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M13.75 9.5a.75.75 0 0 1 .75-.75h2a.75.75 0 0 1 .75.75v2a.75.75 0 0 1-1.5 0v-1.25H14.5a.75.75 0 0 1-.75-.75z"
-                      data-original="#000000"
-                    />
-                    <path
-                      d="M3.095 3.095C4.429 1.76 6.426 1.25 9 1.25h6c2.574 0 4.57.51 5.905 1.845C22.24 4.429 22.75 6.426 22.75 9v6c0 2.574-.51 4.57-1.845 5.905C19.571 22.24 17.574 22.75 15 22.75H9c-2.574 0-4.57-.51-5.905-1.845C1.76 19.571 1.25 17.574 1.25 15V9c0-2.574.51-4.57 1.845-5.905zm1.06 1.06C3.24 5.071 2.75 6.574 2.75 9v6c0 2.426.49 3.93 1.405 4.845.916.915 2.419 1.405 4.845 1.405h6c2.426 0 3.93-.49 4.845-1.405.915-.916 1.405-2.419 1.405-4.845V9c0-2.426-.49-3.93-1.405-4.845C18.929 3.24 17.426 2.75 15 2.75H9c-2.426 0-3.93.49-4.845 1.405z"
-                      data-original="#000000"
-                    />
-                  </g>
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  Quality Re-assurance
-                </h3>
-                <div class="text-gray-500 text-sm leading-relaxed ml-[15px]">
-                  <ul class="list-disc">
-                    <li>
-                      Demonstrate to customers and regulators you are running a
-                      safe shop.
-                    </li>
-                    <li>
-                      Get comfort that you are operating in a safe work
-                      environment.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 32 32"
-                >
-                  <path
-                    d="M28.068 12h-.128a.934.934 0 0 1-.864-.6.924.924 0 0 1 .2-1.01l.091-.091a2.938 2.938 0 0 0 0-4.147l-1.511-1.51a2.935 2.935 0 0 0-4.146 0l-.091.091A.956.956 0 0 1 20 4.061v-.129A2.935 2.935 0 0 0 17.068 1h-2.136A2.935 2.935 0 0 0 12 3.932v.129a.956.956 0 0 1-1.614.668l-.086-.091a2.935 2.935 0 0 0-4.146 0l-1.516 1.51a2.938 2.938 0 0 0 0 4.147l.091.091a.935.935 0 0 1 .185 1.035.924.924 0 0 1-.854.579h-.128A2.935 2.935 0 0 0 1 14.932v2.136A2.935 2.935 0 0 0 3.932 20h.128a.934.934 0 0 1 .864.6.924.924 0 0 1-.2 1.01l-.091.091a2.938 2.938 0 0 0 0 4.147l1.51 1.509a2.934 2.934 0 0 0 4.147 0l.091-.091a.936.936 0 0 1 1.035-.185.922.922 0 0 1 .579.853v.129A2.935 2.935 0 0 0 14.932 31h2.136A2.935 2.935 0 0 0 20 28.068v-.129a.956.956 0 0 1 1.614-.668l.091.091a2.935 2.935 0 0 0 4.146 0l1.511-1.509a2.938 2.938 0 0 0 0-4.147l-.091-.091a.935.935 0 0 1-.185-1.035.924.924 0 0 1 .854-.58h.128A2.935 2.935 0 0 0 31 17.068v-2.136A2.935 2.935 0 0 0 28.068 12ZM29 17.068a.933.933 0 0 1-.932.932h-.128a2.956 2.956 0 0 0-2.083 5.028l.09.091a.934.934 0 0 1 0 1.319l-1.511 1.509a.932.932 0 0 1-1.318 0l-.09-.091A2.957 2.957 0 0 0 18 27.939v.129a.933.933 0 0 1-.932.932h-2.136a.933.933 0 0 1-.932-.932v-.129a2.951 2.951 0 0 0-5.028-2.082l-.091.091a.934.934 0 0 1-1.318 0l-1.51-1.509a.934.934 0 0 1 0-1.319l.091-.091A2.956 2.956 0 0 0 4.06 18h-.128A.933.933 0 0 1 3 17.068v-2.136A.933.933 0 0 1 3.932 14h.128a2.956 2.956 0 0 0 2.083-5.028l-.09-.091a.933.933 0 0 1 0-1.318l1.51-1.511a.932.932 0 0 1 1.318 0l.09.091A2.957 2.957 0 0 0 14 4.061v-.129A.933.933 0 0 1 14.932 3h2.136a.933.933 0 0 1 .932.932v.129a2.956 2.956 0 0 0 5.028 2.082l.091-.091a.932.932 0 0 1 1.318 0l1.51 1.511a.933.933 0 0 1 0 1.318l-.091.091A2.956 2.956 0 0 0 27.94 14h.128a.933.933 0 0 1 .932.932Z"
-                    data-original="#000000"
-                  />
-                  <path
-                    d="M16 9a7 7 0 1 0 7 7 7.008 7.008 0 0 0-7-7Zm0 12a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Z"
-                    data-original="#000000"
-                  />
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  Flexible Data Export Options
-                </h3>
-                <div class="text-gray-500 text-sm leading-relaxed ml-[15px]">
-                  <ul class="list-disc">
-                    <li>
-                      Export your data in various formats including CSV, Excel
-                      (XLS), and Excel (XLSX), ensuring compatibility with your
-                      preferred software and systems.
-                    </li>
-                    <li>
-                      Seamlessly convert and manage your data files, making it
-                      easy to handle and analyze information across different
-                      platforms.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-
-            <div
-              class="bg-white rounded-2xl overflow-hidden shadow-md hover:shadow-lg transition-all"
-            >
-              <div class="p-8">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="#007bff"
-                  class="w-8 mb-6"
-                  viewBox="0 0 32 32"
-                >
-                  <path
-                    d="M28.068 12h-.128a.934.934 0 0 1-.864-.6.924.924 0 0 1 .2-1.01l.091-.091a2.938 2.938 0 0 0 0-4.147l-1.511-1.51a2.935 2.935 0 0 0-4.146 0l-.091.091A.956.956 0 0 1 20 4.061v-.129A2.935 2.935 0 0 0 17.068 1h-2.136A2.935 2.935 0 0 0 12 3.932v.129a.956.956 0 0 1-1.614.668l-.086-.091a2.935 2.935 0 0 0-4.146 0l-1.516 1.51a2.938 2.938 0 0 0 0 4.147l.091.091a.935.935 0 0 1 .185 1.035.924.924 0 0 1-.854.579h-.128A2.935 2.935 0 0 0 1 14.932v2.136A2.935 2.935 0 0 0 3.932 20h.128a.934.934 0 0 1 .864.6.924.924 0 0 1-.2 1.01l-.091.091a2.938 2.938 0 0 0 0 4.147l1.51 1.509a2.934 2.934 0 0 0 4.147 0l.091-.091a.936.936 0 0 1 1.035-.185.922.922 0 0 1 .579.853v.129A2.935 2.935 0 0 0 14.932 31h2.136A2.935 2.935 0 0 0 20 28.068v-.129a.956.956 0 0 1 1.614-.668l.091.091a2.935 2.935 0 0 0 4.146 0l1.511-1.509a2.938 2.938 0 0 0 0-4.147l-.091-.091a.935.935 0 0 1-.185-1.035.924.924 0 0 1 .854-.58h.128A2.935 2.935 0 0 0 31 17.068v-2.136A2.935 2.935 0 0 0 28.068 12ZM29 17.068a.933.933 0 0 1-.932.932h-.128a2.956 2.956 0 0 0-2.083 5.028l.09.091a.934.934 0 0 1 0 1.319l-1.511 1.509a.932.932 0 0 1-1.318 0l-.09-.091A2.957 2.957 0 0 0 18 27.939v.129a.933.933 0 0 1-.932.932h-2.136a.933.933 0 0 1-.932-.932v-.129a2.951 2.951 0 0 0-5.028-2.082l-.091.091a.934.934 0 0 1-1.318 0l-1.51-1.509a.934.934 0 0 1 0-1.319l.091-.091A2.956 2.956 0 0 0 4.06 18h-.128A.933.933 0 0 1 3 17.068v-2.136A.933.933 0 0 1 3.932 14h.128a2.956 2.956 0 0 0 2.083-5.028l-.09-.091a.933.933 0 0 1 0-1.318l1.51-1.511a.932.932 0 0 1 1.318 0l.09.091A2.957 2.957 0 0 0 14 4.061v-.129A.933.933 0 0 1 14.932 3h2.136a.933.933 0 0 1 .932.932v.129a2.956 2.956 0 0 0 5.028 2.082l.091-.091a.932.932 0 0 1 1.318 0l1.51 1.511a.933.933 0 0 1 0 1.318l-.091.091A2.956 2.956 0 0 0 27.94 14h.128a.933.933 0 0 1 .932.932Z"
-                    data-original="#000000"
-                  />
-                  <path
-                    d="M16 9a7 7 0 1 0 7 7 7.008 7.008 0 0 0-7-7Zm0 12a5 5 0 1 1 5-5 5.006 5.006 0 0 1-5 5Z"
-                    data-original="#000000"
-                  />
-                </svg>
-                <h3 class="text-gray-800 text-xl font-semibold mb-3">
-                  Customized & Recommended Data
-                </h3>
-                <div class="text-gray-500 text-sm leading-relaxed ml-[15px]">
-                  <ul class="list-disc">
-                    <li>
-                      Utilize RiskSafe's expert-recommended controls and
-                      treatments if you're new to risk management, ensuring you
-                      follow best practices right from the start.
-                    </li>
-                    <li>
-                      Create and integrate your custom data throughout the
-                      dashboard for a tailored risk management strategy that
-                      fits your specific needs.
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
       </div>
-    </div>
-
-    <div class="bg-white py-12">
-  <div class="container mx-auto px-6">
-    <h2 class="text-center text-4xl font-extrabold text-blue-600 mb-8">
-      Join the RiskSafe Training Academy
-    </h2>
-    <p class="text-center text-lg text-gray-700 mb-12">
-      Improve your compliance risk management knowledge
-    </p>
-
-    <ul class="space-y-6">
-    
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">KYC</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Fraud Risk</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Privacy</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Risk Management</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Financial Crime</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Virtual Assets</span>
-      </li>
-
-      <li class="flex items-center p-4 border border-gray-200 rounded-lg shadow-lg transition-transform transform hover:scale-105">
-        <span class="text-2xl font-bold text-blue-600 mr-4">Data Risk</span>
-      </li>
-    </ul>
-
-    <div class="text-center mt-12">
-      <h3 class="text-2xl font-bold text-blue-600 mb-4">Get Access to Training Short Courses</h3>
-      <p class="text-lg text-gray-700 mb-4">
-        Price and description to be shared soon.
-      </p>
-    </div>
-  </div>
-</div>
-
-
-    <!-- 6 -->
-    <div class="flex justify-center items-center z-[2] mt-[20px]">
-      <div
-        class="cta w-full flex flex-col rounded-[0] sm:rounded-[10px] gap-[20px] p-[30px] sm:p-[50px] justify-center items-center sm:w-[80%]"
-      >
-        <h1 class="font-bold sm:w-[700px] w-full text-[30px] text-center">
-          Discover why RiskSafe is loved by Compliance Risk Officers around the
-          world
-        </h1>
-        <!-- <div class="sm:w-[500px] w-full text-center">
-          Discover why RiskSafe is loved by Compliance Risk Officers around the
-          world!
-        </div> -->
-        <div class="mt-[10px] flex gap-[10px]">
-          <a href="/book-demo.html" class="btn btn-secondary">Book Demo</a>
-          <a
-            href="/auth/sign-in.html"
-            class="btn btn-secondary gap-[5px] justify-center items-center"
-            >Get Started <i class="fa fa-arrow-right"></i
-          ></a>
-        </div>
-      </div>
-    </div>
-
-    <!-- footer -->
-    <div>
-      <footer
-        class="shadow-md py-4 sm:py-[30px] z-1 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide mt-[20px] border border-gray-300"
-      >
-        <div class="flex flex-col sm:flex-row justify-between mb-[30px]">
-          <div class="about w-full sm:w-[50%]">
-            <div class="font-bold mb-[5px]">About RiskSafe</div>
-            <div class="text-[15px]">
-              We provide comprehensive risk management services, from assessment
-              and analysis to customized strategies, aimed at minimizing
-              uncertainty and maximizing opportunities. Our proactive approach
-              helps you stay ahead of threats and capitalize on emerging trends.
+    </section>
+    <section class="flex-1">
+      <div class="grid sm:grid-cols-2 grid-cols-1">
+        <div class="flex items-center">
+          <div>
+            <div class="text-[400%] leading-[70px] font-extrabold">
+              Manage Risks, Compliance<br />
+              Stay Secure!
             </div>
-
-            <div class="mt-[30px] sm:mb-[0px] mb-[30px]">
-              <div id="newsletterResponse"></div>
-              <form class="flex gap-[5px]" id="submitNewsletter">
+            <div class="mt-[20px]">
+              Join the waitlist for RiskSafe – the all-in-one <br />platform for
+              risk management, compliance, and auditing.
+            </div>
+            <form
+              class="mt-[50px] sm:max-w-[400px] gap-[10px] w-full"
+              id="join"
+            >
+              <label class="text-[80%] text-gray-600">Email Address:</label>
+              <div class="flex gap-[10px] w-full items-center">
                 <input
-                  name="useremail"
+                  placeholder="Join the waitlist..."
                   type="email"
                   required
-                  placeholder="Sign up for newsletter"
-                  class="flex-1 w-full text-sm text-gray-800 border border-gray-300 px-4 py-3 rounded-lg outline-[var(--primary)]"
+                  class="w-full mt-1 mb-3 p-2 border border-gray-300 outline-none rounded-[5px] focus:ring-indigo-500 focus:border-indigo-500"
                 />
-                <button
-                  type="submit"
-                  class="shadow-xl py-3 px-4 text-sm tracking-wide rounded-lg text-white bg-[var(--primary)] focus:outline-none"
-                >
-                  <i class="fa-solid fa-paper-plane"></i>
-                </button>
-              </form>
-            </div>
-          </div>
-          <div
-            class="about w-full mt-[10px] sm:mt-[0px] sm:w-[50%] flex flex-col sm:flex-row gap-[20px] sm:gap-[0px] sm:justify-around"
-          >
-            <div>
-              <div class="font-bold mb-[5px]">Contact Us</div>
-              <ul>
-                <li>Email: info@risksafe.co</li>
-                <li>Phone: 09076876557</li>
-              </ul>
-            </div>
-
-            <div>
-              <div class="font-bold mb-[10px]">Company</div>
-              <ul class="flex gap-[7px] flex-col">
-                <li><a class="bb" href="/">Home</a></li>
-                <li><a class="bb" href="/about-risksafe">About RiskSafe</a></li>
-                <li><a class="bb" href="/contact-us">Contact Us</a></li>
-                <li><a class="bb" href="/contact-us">Resources</a></li>
-                <li><a class="bb" href="/contact-us">Pricing</a></li>
-                <li class="mt-[10px]">
-                  <a class="bb" href="/contact-us">Get Started</a>
-                </li>
-              </ul>
-            </div>
+                <button class="btn w-max mt-[-8px]">Submit</button>
+              </div>
+            </form>
           </div>
         </div>
-        <div class="flex gap-[10px] mb-[10px] w-full">
-          Follow us on :
-          <a href="https://facebook.com/" target="_blank">
-            <i class="text-[20px] fa-brands fa-square-facebook"></i>
+        <div class="flex justify-center items-center">
+          <img
+            src="risksafe-img-removebg.png"
+            class="draggable-none transition-opacity duration-500 w-full h-[500px] rounded-[50px] object-cover object-center"
+          />
+        </div>
+      </div>
+    </section>
+    <section class="py-[30px] border">
+      <div class="grid grid-cols-1 gap-[20px] sm:grid-cols-2">
+        <div class="flex gap-[10px] items-center">
+          <a>
+            <i class="fa-brands fa-facebook text-[20px]"></i>
           </a>
-          <a href="https://linedin.com/" target="_blank"
-            ><i class="text-[20px] fa-brands fa-linkedin"></i
-          ></a>
+          <a>
+            <i class="fa-brands fa-linkedin text-[20px]"></i>
+          </a>
         </div>
-        <div
-          class="flex justify-between border-[var(--primary)]-400 border-t-2 pt-[20px] pb-[-20px]"
-        >
-          <div>© RiskSafe - 2024</div>
-          <div class="flex sm:gap-3 gap-[0px] sm:flex-row flex-col">
-            <a class="bb" href="/contact-us">Terms of service</a>
-            <a class="bb" href="/contact-us">Privacy Policy</a>
-            <a class="bb hidden sm:block" href="/contact-us">RiskSafe Help</a>
-          </div>
+        <div class="flex justify-end">
+          <p>&copy; 2025 RiskSafe. All Rights Reserved.</p>
         </div>
-      </footer>
-    </div>
+      </div>
+    </section>
   </body>
 </html>
-
-<script
-  src="https://code.jquery.com/jquery-3.7.1.js"
-  integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
-  crossorigin="anonymous"
-></script>
-<script>
-  var toggleOpen = document.getElementById("toggleOpen");
-  var toggleClose = document.getElementById("toggleClose");
-  var collapseMenu = document.getElementById("collapseMenu");
-
-  function handleClick() {
-    if (collapseMenu.style.display === "block") {
-      collapseMenu.style.display = "none";
-    } else {
-      collapseMenu.style.display = "block";
-    }
+<style>
+  * {
+    font-family: "Poppins";
+    font-size: 15px;
   }
-
-  toggleOpen.addEventListener("click", handleClick);
-  toggleClose.addEventListener("click", handleClick);
-
-  $("#submitNewsletter").submit(function (event) {
-    event.preventDefault();
-
-    var formValues = $(this).serialize();
-    $.post("ajax/newsletter", {
-      newsletter: formValues,
-    }).done(function (data) {
-      $("#newsletterResponse").html(data);
-
-      setTimeout(function () {
-        $("#submitNewsletter input").val("");
-        $("#newsletterResponse").html("");
-      }, 0);
-    });
-  });
-
-  $(".image-setter").click(function (e) {
-    var img = $(this).attr("data-img");
-    $(".image-setter").removeClass("active");
-    $("#mainImage").attr("src", `/assets/images/home/${img}`);
-    $(this).addClass("active");
-  });
-</script>
-<style lang="scss">
-  img#mainImage {
-    border-radius: 10px;
-    /* border: 3px solid rgba(235, 235, 235, 0.5); */
-    border: 1px solid var(--primary);
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    -webkit-user-drag: none;
-    cursor: pointer;
+  :root {
+    --primary: #1c1c84;
   }
-  .image-setter {
-    border: 1px solid rgba(235, 235, 235, 0.5);
-    border-left: 10px solid rgba(235, 235, 235, 0.5);
+  .bb {
+    /* padding-bottom: 1px; */
+    color: var(--primary);
+    border-bottom: 1px solid var(--primary);
+  }
+  .btn {
+    padding: 10px 15px;
     border-radius: 5px;
-    min-height: 200px;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    padding: 30px;
-
-    .head {
-      font-size: 23px;
-      font-weight: 700;
-    }
-    .desc {
-      font-size: 13px;
-      color: rgb(0, 0, 0, 0.7);
-    }
-    &.active {
-      border-left: 10px solid var(--primary);
-      background-color: #f7f9fc;
-
-      .head {
-        color: var(--primary);
-      }
-    }
+    background-color: var(--primary);
+    color: white;
+  }
+  section:not(.full) {
+    padding-left: 100px;
+    padding-right: 100px;
   }
 
-  .image-setter:not(.active):hover {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  @media (max-width: 769px) {
+    section:not(.full) {
+      padding-left: 30px;
+      padding-right: 30px;
+    }
   }
 </style>
